@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLAS | Autonomous Market Intelligence Agent</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuente Roboto / Inter vía Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Bar de estado superior -->
+    <header class="top-bar" role="banner">
+        <div class="logo-area">
+            <h1>ATLAS <span>Agent v1.2</span></h1>
+            <span class="badge badge-paper" aria-label="Modo de simulación">PAPER TRADING MODE</span>
+        </div>
+        <div class="system-status">
+            <span class="status-indicator online" tabindex="0" aria-label="Estado de RYO-CHAN API: Conectado">
+                <span class="dot"></span> RYO-CHAN API: OK
+            </span>
+            <span class="status-indicator live" tabindex="0" aria-label="Estado de datos: En vivo">
+                <span class="dot"></span> Data: Live
+            </span>
+        </div>
+    </header>
+
+    <main class="dashboard-container" id="main-content">
+        
+        <!-- Explicación Rápida para Jueces (30-Second Elevator Pitch) -->
+        <section class="summary-hero-card" tabindex="0" aria-labelledby="hero-title">
+            <h2 id="hero-title">Instant Decision Insight (30-Sec Summary)</h2>
+            <p class="hero-desc">ATLAS evalúa riesgos y datos en tiempo real. Transforma análisis crudo en decisiones cuantitativas determinísticas auditables sin intervención humana.</p>
+            
+            <div class="pipeline-nav" aria-label="Flujo de trabajo de ATLAS">
+                <div class="step" tabindex="0">1. OBSERVE</div>
+                <div class="arrow">➔</div>
+                <div class="step" tabindex="0">2. INVESTIGATE</div>
+                <div class="arrow">➔</div>
+                <div class="step" tabindex="0">3. CHALLENGE</div>
+                <div class="arrow">➔</div>
+                <div class="step active" tabindex="0">4. DECIDE</div>
+                <div class="arrow">➔</div>
+                <div class="step" tabindex="0">5. SIMULATE</div>
+            </div>
+        </section>
+
+        <!-- Métricas Rápidas / Command Center -->
+        <section class="metrics-grid" aria-label="Métricas de Mercado">
+            <article class="metric-card" tabindex="0">
+                <span class="metric-title">Market Regime</span>
+                <span class="metric-value" id="regime-val">BULLISH_TREND</span>
+                <span class="metric-sub">Confianza: Alta</span>
+            </article>
+            <article class="metric-card" tabindex="0">
+                <span class="metric-title">Sentiment Index</span>
+                <span class="metric-value highlight" id="sentiment-val">68 / 100</span>
+                <span class="metric-sub">Greed (Codicia)</span>
+            </article>
+            <article class="metric-card" tabindex="0">
+                <span class="metric-title">Last Evaluated Token</span>
+                <span class="metric-value" id="token-val">SOL/USDT</span>
+                <span class="metric-sub">RSI: 62.4 | ATR: 1.85</span>
+            </article>
+            <article class="metric-card" tabindex="0">
+                <span class="metric-title">Accumulated Win Rate</span>
+                <span class="metric-value success" id="winrate-val">40.0%</span>
+                <span class="metric-sub">5 Trades Cerrados</span>
+            </article>
+        </section>
+
+        <!-- Sección Principal: Razonamiento Causal y Evidencia -->
+        <div class="two-column-layout">
+            
+            <!-- Columna Izquierda: Debate Bull vs Bear -->
+            <section class="panel-card" tabindex="0" aria-labelledby="debate-heading">
+                <h3 id="debate-heading">Structured Evidence Debate</h3>
+                <div class="debate-container">
+                    <div class="debate-box bull-box" tabindex="0">
+                        <h4>🟢 Bull Case (Argumentos a favor)</h4>
+                        <ul>
+                            <li>RSI en zona de impulso ascendente sostenido (>60).</li>
+                            <li>Régimen macro favorable con baja volatilidad extrema.</li>
+                            <li>Veredicto técnico: <strong>BUY_ACCUMULATE</strong>.</li>
+                        </ul>
+                    </div>
+                    <div class="debate-box bear-box" tabindex="0">
+                        <h4>🔴 Bear Case & Invalidation (Riesgos)</h4>
+                        <ul>
+                            <li>Resistencia cercana identificada en zona superior.</li>
+                            <li>Nivel de Invalidación (Stop Loss): <strong>$182.50 (-5.0%)</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Columna Derecha: Explicación de Decision Causal -->
+            <section class="panel-card" tabindex="0" aria-labelledby="why-heading">
+                <h3 id="why-heading">Why This Decision Matters?</h3>
+                <div class="action-banner action-buy" id="action-banner" tabindex="0">
+                    <span class="action-label">DECISION:</span>
+                    <span class="action-value">BUY</span>
+                    <span class="score-pill">Score: 3/4</span>
+                </div>
+
+                <div class="causal-chain">
+                    <div class="causal-item" tabindex="0">
+                        <span class="cause">Régimen Bullish + RSI Alto</span>
+                        <span class="effect">+2 Puntos al Score</span>
+                    </div>
+                    <div class="causal-item" tabindex="0">
+                        <span class="cause">Veredicto Técnico Positivo</span>
+                        <span class="effect">+1 Punto al Score</span>
+                    </div>
+                    <div class="causal-item" tabindex="0">
+                        <span class="cause">Score Final 3 ≥ Umbral Requerido (3)</span>
+                        <span class="effect"><strong>Ejecución Simulada Generada</strong></span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Tabla de Auditoría / Historial -->
+        <section class="panel-card" tabindex="0" aria-labelledby="audit-heading">
+            <div class="panel-header">
+                <h3 id="audit-heading">Atomic Decision Journal (Audit Trail)</h3>
+                <button class="btn btn-primary" id="btn-run-cycle" aria-label="Ejecutar nuevo ciclo de simulación (Atajo: Tecla R)">
+                    ▶ Simular Ciclo (Presiona 'R')
+                </button>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="data-table" aria-label="Tabla de historial de decisiones">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID Decisión</th>
+                            <th scope="col">Timestamp (UTC)</th>
+                            <th scope="col">Asset</th>
+                            <th scope="col">Acción</th>
+                            <th scope="col">Score</th>
+                            <th scope="col">Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="journal-table-body">
+                        <!-- Insertado vía JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>ATLAS Autonomous Agent — Proyecto preparado para Netlify | Accesible mediante Teclado [Tab / R / 1-4]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
